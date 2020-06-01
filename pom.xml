@@ -14,25 +14,7 @@
         <version>2.1.4.RELEASE</version>
         <relativePath /> <!-- lookup parent from repository -->
     </parent>
-
-    <repositories>
-        <repository>
-            <id>lowes-snapshots</id>
-            <url>http://vmlnxbandd.lowes.com/nexus/content/repositories/snapshots/</url>
-        </repository>
-        <repository>
-            <id>confluent</id>
-            <url>http://packages.confluent.io/maven/</url>
-        </repository>
-    </repositories>
-
-    <distributionManagement>
-        <snapshotRepository>
-            <id>lowes-snapshots</id>
-            <url>http://vmlnxbandd.lowes.com/nexus/content/repositories/snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
-
+         
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
