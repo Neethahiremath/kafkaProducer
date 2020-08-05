@@ -23,7 +23,7 @@ public class KafkaProduceService {
     private Gson gson;
 
     public void publishMessage(AvailabilityNRTRequest availabilityNRTRequest) {
-        ProducerRecord<String, String> record = new ProducerRecord<>(kafkaBaseConfig.getInputTopic(), availabilityNRTRequest.getItemId(),
+        ProducerRecord<String, String> record = new ProducerRecord<>(kafkaBaseConfig.getInputTopic(), availabilityNRTRequest.getName(),
                 gson.toJson(availabilityNRTRequest));
 
         producer.send(record, (metadata, exception) -> {
